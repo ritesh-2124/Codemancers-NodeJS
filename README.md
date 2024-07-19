@@ -1,5 +1,5 @@
-NodeJS Ecommerce Project
-Overview
+# NodeJS Ecommerce Project
+## Overview
 This project is a Node.js-based eCommerce application that allows users to log in and out, manage products, and handle cart functionality. The application supports user roles, including super admins and regular users, and offers a minimal frontend interface. Due to time constraints(office workload), the frontend and test case implementations are incomplete.
 
 Features
@@ -49,7 +49,7 @@ Create a .env file in the root directory with the following content:
 
 # env
   
-# for testing purpose i am adding eterealemail you can create new one 
+# for testing purpose i am adding etereal email you can create new one 
 
 
 MONGO_URI=your_mongo_uri
