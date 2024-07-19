@@ -49,7 +49,7 @@ Create a .env file in the root directory with the following content:
 
 # env
   
-# for testing purpose i am adding etereal email you can create new one 
+### For testing purpose i am adding etereal email you can create new one from https://ethereal.email/
 
 
 MONGO_URI=your_mongo_uri
