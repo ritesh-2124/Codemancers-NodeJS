@@ -53,9 +53,13 @@ Create a .env file in the root directory with the following content:
 
 
 MONGO_URI=your_mongo_uri
+
 JWT_SECRET=Codemancers@Ritesh
+
 EMAIL=alena.adams@ethereal.email
+
 EMAIL_PASSWORD=tmp9TFdKSsS5Sb4zdY
+
 PORT=5000
 
 Start the Server:
