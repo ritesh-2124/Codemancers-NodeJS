@@ -2,24 +2,24 @@
 ## Overview
 This project is a Node.js-based eCommerce application that allows users to log in and out, manage products, and handle cart functionality. The application supports user roles, including super admins and regular users, and offers a minimal frontend interface. Due to time constraints(office workload), the frontend and test case implementations are incomplete.
 
-Features
-User Authentication:
+### Features
+#### User Authentication:
 Login and logout functionality.
 Upon logging in, users are greeted with a welcome message: "Hello, <email-of-the-user>!"
-Role Management:
+#### Role Management:
 Users can be assigned roles of either super_admin or user.
-Product Management:
+#### Product Management:
 Super admins can manage products, including adding products with an image, title, description, and price.
-Product Browsing:
+#### Product Browsing:
 Regular users can browse products and add them to their cart.
-Cart Management:
+#### Cart Management:
 Users can add multiple products to their cart.
 Users can review their cart and proceed to checkout.
 At checkout, users must provide a shipping address, and the cart is cleared upon successful checkout.
-Email Notifications:
+#### Email Notifications:
 An email notification is sent to users after a successful cart checkout.
 Technologies Used
-Backend:
+## Backend:
 
 Node.js
 Express.js
