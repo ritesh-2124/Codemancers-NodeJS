@@ -63,7 +63,8 @@ EMAIL_PASSWORD=tmp9TFdKSsS5Sb4zdY
 PORT=5000
 
 Start the Server:
-npx ts-node src/server.ts
+
+## npx ts-node src/server.ts
 
 # Testing
 Note: Test cases for the APIs are not yet implemented due to time constraints.
