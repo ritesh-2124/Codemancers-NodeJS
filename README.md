@@ -5,7 +5,7 @@ This project is a Node.js-based eCommerce application that allows users to log i
 ### Features
 #### User Authentication:
 Login and logout functionality.
-Upon logging in, users are greeted with a welcome message: "Hello, <email-of-the-user>!"
+Upon logging in, users are greeted with a welcome message: "Hello, email-of-the-user!"
 #### Role Management:
 Users can be assigned roles of either super_admin or user.
 #### Product Management:
@@ -49,7 +49,7 @@ Create a .env file in the root directory with the following content:
 
 # env
   
-### For testing purpose i am adding etereal email you can create new one from https://ethereal.email/
+### For testing purpose of email i have used etereal email you can create new one from https://ethereal.email/
 
 
 MONGO_URI=your_mongo_uri
