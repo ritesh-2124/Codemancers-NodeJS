@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "4f9d12ea-a498-4c9e-b2d8-653084c88eb2",
+		"name": "API Collection",
+		"description": "Collection of API endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30646161"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"ritesh.yadav@allen.in\", \"password\": \"string\", \"role\": \"super_admin\"}"
+				},
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"ritesh.yadav@allen.in\", \"password\": \"string\"}"
+				},
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OThkMTA0ZWE1YWRhNzYwYzkyOWQwNyIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImVtYWlsIjoicml0ZXNoLnlhZGF2QGFsbGVuLmluIiwiaWF0IjoxNzIxNTUyMzU5LCJleHAiOjE3MjE1NTU5NTl9.T4wHQwC6hq1CcCnNVTNz03r4nqisivOCvy2KIQUvhcc"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Ritesh",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test dummy image ritesh 2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/ritesh.yadav/Downloads/1000029938.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/products",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OThkMTA0ZWE1YWRhNzYwYzkyOWQwNyIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImVtYWlsIjoicml0ZXNoLnlhZGF2QGFsbGVuLmluIiwiaWF0IjoxNzIxNTU1ODQ2LCJleHAiOjE3MjE1NTk0NDZ9.M9d6zozNmZpiPTvWShz3UrhcOnzyzsP8Q6RCh-qxd24"
+					}
+				],
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/products",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OThkMTA0ZWE1YWRhNzYwYzkyOWQwNyIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImVtYWlsIjoicml0ZXNoLnlhZGF2QGFsbGVuLmluIiwiaWF0IjoxNzIxNDE4NTg0LCJleHAiOjE3MjE0MjIxODR9._W0AgYjWsaQcPYyBnCtoqnMeYBeT8qC_VwByz-hCQUI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productId\" : \"6698d3e59033a958d05030f3\", \"quantity\" : 10}"
+				},
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/cart/add",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OThkMTA0ZWE1YWRhNzYwYzkyOWQwNyIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImVtYWlsIjoicml0ZXNoLnlhZGF2QGFsbGVuLmluIiwiaWF0IjoxNzIxNDE4NTg0LCJleHAiOjE3MjE0MjIxODR9._W0AgYjWsaQcPYyBnCtoqnMeYBeT8qC_VwByz-hCQUI"
+					}
+				],
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/cart",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OThkMTA0ZWE1YWRhNzYwYzkyOWQwNyIsInJvbGUiOiJzdXBlcl9hZG1pbiIsImVtYWlsIjoicml0ZXNoLnlhZGF2QGFsbGVuLmluIiwiaWF0IjoxNzIxNDE4NTg0LCJleHAiOjE3MjE0MjIxODR9._W0AgYjWsaQcPYyBnCtoqnMeYBeT8qC_VwByz-hCQUI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"shippingAddress\" : \"test\"}"
+				},
+				"url": {
+					"raw": "https://codemancers-nodejs-2.onrender.com/api/cart/checkout",
+					"protocol": "https",
+					"host": [
+						"codemancers-nodejs-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
