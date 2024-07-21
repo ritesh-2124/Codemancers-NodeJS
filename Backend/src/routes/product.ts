@@ -21,7 +21,7 @@ router.post('/', [auth, admin, upload.single('image')], async (req : any, res : 
     const image = req.file?.path;
     if (!image) return res.status(400).send('Image is required');
     // update the mame of the image
-    const product = new Product({ title, description, price, image : image + '.jpg' });
+    const product = new Product({ title, description, price, image : image });
     await product.save();
     console.log(req.user);
     res.status(201).send(`Product ${title} created By ${req.user.email}`);
