@@ -96,3 +96,4 @@ POST /api/cart/checkout - Checkout the cart.
 ## Known Issues
 The frontend implementation is not complete.
 Test cases are missing.
+Image we can manage from CDN.
