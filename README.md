@@ -4,6 +4,24 @@ This project is a Node.js-based eCommerce application that allows users to log i
 
 ### Live URL Backend - https://codemancers-nodejs-2.onrender.com/
 
+# API Endpoints
+
+## User Authentication:
+
+POST /api/auth/register - Register a new user.
+POST /api/auth/login - Log in and receive a JWT token.
+
+## Product Management:
+
+POST /api/products - Add a new product (super admin only).
+GET /api/products - Get a list of products.
+Cart Management:
+
+POST /api/cart/add - Add a product to the cart.
+GET /api/cart - Review the cart.
+POST /api/cart/checkout - Checkout the cart.
+
+
 
 ### Features
 #### User Authentication:
@@ -74,24 +92,6 @@ Note: Test cases for the APIs are not yet implemented due to time constraints.
 
 ## Testing Frameworks:
 Consider using Mocha, Jest, or any other testing framework to write unit and integration tests.
-
-# API Endpoints
-
-## User Authentication:
-
-POST /api/auth/register - Register a new user.
-POST /api/auth/login - Log in and receive a JWT token.
-
-## Product Management:
-
-POST /api/products - Add a new product (super admin only).
-GET /api/products - Get a list of products.
-Cart Management:
-
-POST /api/cart/add - Add a product to the cart.
-GET /api/cart - Review the cart.
-POST /api/cart/checkout - Checkout the cart.
-
 
 ## Known Issues
 The frontend implementation is not complete.
