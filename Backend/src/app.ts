@@ -1,10 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import authRoutes from './routes/auth';
-import productRoutes from './routes/product';
-import cartRoutes from './routes/cart';
+import authRoutes from './src/routes/auth';
+import productRoutes from './src/routes/product';
+import cartRoutes from './src/routes/cart';
 var cors = require('cors');
+const path = require('path');
 
 dotenv.config();
 
@@ -14,6 +15,8 @@ app.use(cors({
 }));
 
 app.use(express.json());
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
