@@ -2,7 +2,7 @@
 ## Overview
 This project is a Node.js-based eCommerce application that allows users to log in and out, manage products, and handle cart functionality. The application supports user roles, including super admins and regular users, and offers a minimal frontend interface. Due to time constraints(office workload), the frontend and test case implementations are incomplete.
 
-### Live URL - https://codemancers-nodejs-2.onrender.com/
+### Live URL Backend - https://codemancers-nodejs-2.onrender.com/
 
 
 ### Features
