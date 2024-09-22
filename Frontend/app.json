@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "codemancers",
+    "slug": "codemancers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ritesh1112.codemancers"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ritesh1112.codemancers"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "codemancers",
+    "extra": {
+      "eas": {
+        "projectId": "71daf792-22e6-4fae-9baf-bca81433de50"
+      }
+    },
+    "owner": "ritesh1112"
+  }
+}
